@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import React, { useState, ChangeEvent, } from 'react';
 
 export const Contacto: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -26,7 +26,7 @@ export const Contacto: React.FC = () => {
         </div>
         <div className='container-form-contacto'>
           <p>Contactanos</p>
-          <form className='form-contacto' netlify >
+          <form className='form-contacto' data-netlify="true" >
             <div>
               <label htmlFor="nombre">Nombre:</label>
               <input type="text" id="nombre" name="nombre" value={formData.nombre} onChange={handleChange} required />
