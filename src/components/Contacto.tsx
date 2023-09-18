@@ -16,23 +16,6 @@ export const Contacto: React.FC = () => {
     });
   }
 
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-
-    const cuerpoCorreo = `
-      Nombre: ${formData.nombre}
-      Teléfono/Celular: ${formData.telefono}
-      Correo Electrónico: ${formData.email}
-      Mensaje: ${formData.mensaje}
-    `;
-
-    const asunto = "Nuevo mensaje de contacto";
-
-    const linkCorreo = `mailto:emilianoperea10@gmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpoCorreo)}`;
-
-    window.location.href = linkCorreo;
-  }
-
   return (
     <>
       <div className='container-contacto'>
@@ -43,7 +26,7 @@ export const Contacto: React.FC = () => {
         </div>
         <div className='container-form-contacto'>
           <p>Contactanos</p>
-          <form onSubmit={handleSubmit} className='form-contacto'>
+          <form className='form-contacto' netlify >
             <div>
               <label htmlFor="nombre">Nombre:</label>
               <input type="text" id="nombre" name="nombre" value={formData.nombre} onChange={handleChange} required />
