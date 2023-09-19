@@ -428,7 +428,7 @@ footer ul li:hover a {
   margin: 30px auto;
   justify-content: space-between;
   align-items: center;
-  height: 600px;
+  max-height: 600px;
   max-width: 1000px;
   background-color: var(--color-secundario);
   border-radius: 10px;
@@ -504,7 +504,6 @@ footer ul li:hover a {
   background: none;
   outline: none;
   border-bottom: 1px solid white;
-  ;
   width: 100%;
   box-shadow: 0 0 0px 1000px var(--color-secundario) inset;
   -webkit-text-fill-color: white;
@@ -516,8 +515,8 @@ footer ul li:hover a {
   background-color: var(--color-secundario);
   resize: none;
   border: 1px solid white;
-  ;
   outline: none;
+  
 }
 
 .botonEnviar-mensaje {
@@ -539,4 +538,62 @@ footer ul li:hover a {
   -webkit-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 767px) {
+  .container-contacto {
+    flex-direction: column;
+    margin:18px;
+  }
+  
+  .container-form-contacto {
+    flex-direction: column; 
+    align-items: center;
+  }
+  
+  .titulo-contacto {
+    width: 100%;
+    align-items: center;
+    font-size: 10px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .titulo-contacto p {
+    margin: auto ;
+    padding-top: 8px;
+    font-size: 14px;
+  }
+  
+  .container-form-contacto {
+    margin: 0;
+    width: 30px;
+  }
+  
+  .container-form-contacto p {
+    font-size: 20px;
+  }
+  
+  .container-form-contacto input {
+    width: 100%;
+    margin-bottom: 38px;
+  }
+  
+  .form-contacto input:focus {
+    font-size: 16px; /* Cambia el tamaño del texto cuando el input está seleccionado */
+  }
+  
+  .container-form-contacto label {
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .form-contacto {
+    width: 260px;
+    display: inline-block;
+    margin-top: 80px;
+  }
+  .botonEnviar-mensaje{
+    left:30px;
+    bottom: 130px;
+  }
 }

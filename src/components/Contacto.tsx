@@ -43,12 +43,12 @@ export const Contacto: React.FC = () => {
     <>
       <div className='container-contacto'>
         <div className='titulo-contacto'>
-          <h1>Informacion de Contacto</h1>
+          <h1>Información de contacto</h1>
           <p>email@gmail.com</p>
           <p>Tel : 0357-4256734</p>
         </div>
         <div className='container-form-contacto'>
-          <p>Contactanos</p>
+          <p>Contáctanos</p>
           <form className='form-contacto' ref={form} onSubmit={sendEmail}>
             <div>
               <label htmlFor="nombre">Nombre:</label>
