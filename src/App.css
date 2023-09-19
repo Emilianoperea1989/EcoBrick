@@ -209,17 +209,24 @@ p {
 /*End Main/
 
 /*Galeria*/
+
 .p-galleria-thumbnail-item-content {
   overflow-x: hidden;
 }
 
 .container-gallery {
+  height: 80vh;
   background-color: var(--color-cuaternario);
 }
 
 .gallery {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin: auto;
+  border: 2px solid black;
+  
+}
+
+.p-galleria-thumbnail-wrapper {
+  display: none !important;
 }
 
 /*End Galeria*/
@@ -418,7 +425,7 @@ footer ul li:hover a {
 
 .container-contacto {
   display: flex;
-  margin: auto;
+  margin: 30px auto;
   justify-content: space-between;
   align-items: center;
   height: 600px;
@@ -446,7 +453,7 @@ footer ul li:hover a {
   color: white;
 }
 
-.titulo-contacto p{
+.titulo-contacto p {
   color: white;
   font-family: 'PT Sans', sans-serif;
 }
@@ -479,7 +486,8 @@ footer ul li:hover a {
   flex-direction: column;
   justify-content: space-evenly;
 }
-.form-contacto label{
+
+.form-contacto label {
   color: white;
   font-family: 'PT Sans', sans-serif;
 }
@@ -495,7 +503,8 @@ footer ul li:hover a {
   border: none;
   background: none;
   outline: none;
-  border-bottom: 1px solid  white;;
+  border-bottom: 1px solid white;
+  ;
   width: 100%;
   box-shadow: 0 0 0px 1000px var(--color-secundario) inset;
   -webkit-text-fill-color: white;
@@ -506,7 +515,8 @@ footer ul li:hover a {
   color: white;
   background-color: var(--color-secundario);
   resize: none;
-  border: 1px solid white;;
+  border: 1px solid white;
+  ;
   outline: none;
 }
 
@@ -530,4 +540,3 @@ footer ul li:hover a {
   -moz-box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.75);
 }
-

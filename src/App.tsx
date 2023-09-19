@@ -12,7 +12,7 @@ import "primereact/resources/primereact.min.css";
 import 'primeicons/primeicons.css';
 //prime flex
 import 'primeflex/primeflex.css';
-import { Galeria } from './components/Galeria';
+import {Galeria} from "./components/Galeria";
 import { Proximamente } from './components/Proximamente';
 import { Contacto } from './components/Contacto';
 
